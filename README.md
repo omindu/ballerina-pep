@@ -55,5 +55,8 @@ If the user is not authorized, the service will return a `401 Unauthorized`. Use
 
 **Note:** Even if we pass the password with the request, the `securedService` service does not handle authentication. It only extracts username from the Authorization header and pass it to the `XACMLConnector`.
 
+## Service diagram
+![Service Diagram](https://rawgit.com/omindu/ballerina-pep/master/resources/images/xacml-pep.svg)
+
 [\[1\]]: <https://ballerinalang.org/>
 [\[2\]]: <http://wso2.com/identity-and-access-management#download>
