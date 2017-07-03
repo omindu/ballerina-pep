@@ -128,7 +128,7 @@ service<http> SecuredService {
             if (isAuthorized) {
     
                 XACMLConnector xacmlConnector = create XACMLConnector("https://localhost:9443/api/identity/entitlement/decision/pdp", "admin", "admin");
-                isAuthorized = XACMLConnector.authorize(xacmlConnector, username, "nyse", "read"); 
+                isAuthorized = XACMLConnector.authorize(xacmlConnector, username, "/securedService/securedMessage", "read"); 
             }
             
             if (isAuthorized) {
